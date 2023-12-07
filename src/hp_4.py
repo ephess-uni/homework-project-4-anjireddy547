@@ -25,7 +25,7 @@ def add_date_range(values, start_date):
     """Adds a daily date range to the list `values` beginning with
     `start_date`.  The date, value pairs are returned as tuples
     in the returned list."""
-    start_Date = datetime.strptime(start_date,"%Y-%m-%d")
+    start_date = datetime.strptime(start_date,"%Y-%m-%d")
     new_dates = [(start_date+timedelta(days=pos),val) for pos,val in enumerate(values)]
     return new_dates
 
