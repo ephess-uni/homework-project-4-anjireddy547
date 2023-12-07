@@ -17,7 +17,7 @@ def date_range(start, n):
     a list of of `n` datetime objects starting at `start` where each
     element in the list is one day after the previous."""
     start_date = datetime.strptime(start,"%Y-%m-%d")
-    new_dates = [start_Date+timedelta(days=i) for i in range(n)]
+    new_dates = [start_date+timedelta(days=i) for i in range(n)]
     return new_dates
 
 
